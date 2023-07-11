@@ -28,7 +28,7 @@ twitter_username: jackdintruff
 github_username:  jdintruff
 
 # Build settings
-theme: minima
+theme: midnight
 plugins:
   - jekyll-feed
 
