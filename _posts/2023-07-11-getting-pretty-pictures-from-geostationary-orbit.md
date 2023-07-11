@@ -32,7 +32,7 @@ Starting from the antenna side, I used a pretty standard 1-meter parabolic grid 
 
 That antenna was connected to a Nooelec SMArTee SDR. Its optimal frequency range was \~500 MHz to 1500 MHz but I found that it was more than capable of making it up to the frequency I needed.
 
-Next I plugged that SDR into an LNA specifically tuned for this frequency range, the Nooelec SDAWbird+ GOES which has a center frequency of 1688 MHz. I'm not entirely sure this was necessary as I didn't test the signal without it, but oh well.
+Next I plugged that SDR into an LNA specifically tuned for this frequency range, the Nooelec SAWbird+ GOES which has a center frequency of 1688 MHz. I'm not entirely sure this was necessary as I didn't test the signal without it, but oh well.
 
 This was all connected to a Raspberry Pi 4B with 8GB of memory running Ubuntu server.
 
@@ -50,7 +50,7 @@ Running the first command will start outputting some information about the strea
 
 ![goesrecv output](../../../../../images/Screenshot%202023-07-11%20065130.png)
 
-This second command processes the stream and parses out individual limages.
+This second command processes the stream and parses out individual images.
 
 ```bash
 goesproc -c /usr/share/goestools/goesproc-goesr.conf \
