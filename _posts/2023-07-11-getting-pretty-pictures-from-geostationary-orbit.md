@@ -1,7 +1,7 @@
 ---
 title: "Getting Pretty Pictures From Geostationary Orbit"
 date: 2023-07-11
-layout: default
+layout: post
 excerpt_separator: <!--more-->
 image: ./images/GOES18_M1_FC_20230706.gif
 ---
@@ -12,19 +12,13 @@ I've always been super interested in space, and once I started getting into radi
 
 ## Background
 
-
-
 ![GOES transmission architecture diagram](../../../../../images/Screenshot%202023-07-11%20063449.png)
 
 The GOES series of satellites are environmental monitoring satellites that observe Earth using several wavelengths of light. They also observe the sun but unfortunately this data isn't as easily accessible (I have a future project planned around receiving that data). 
 
 These satellites beam raw data down to one of three stations on the East coast of the US that are operated by NOAA where it's processed and turned into images and data that are sent back up to the satellite for retransmission. The processed images are transmitted by its High Rate Information Transfer (HRIT) system. This is the information I was aiming to capture.
 
-
-
 ## Hardware
-
-
 
 ![All the hardware involved in this project](../../../../../images/PXL_20230625_041218617.jpg)
 
@@ -58,7 +52,6 @@ goesproc -c /usr/share/goestools/goesproc-goesr.conf \
 ```
 
 This produces files in the following directory structure:
-
 
 ```bash
 $ find . -maxdepth 3 -path ./nws -prune -o -print | sort
@@ -99,19 +92,12 @@ The directories are generally of the form `<satellite>/<region>/<channel>/<date>
 
 GOES-16 is also known as GOES-East, and is responsible for capturing images from the East coast of the US. Himawari 8 is a Japanese satellite which captures data above Japan.
 
-
-
 Once I had used `goestools` to capture these images, it was very straightforward to create a Python script that would accept a few parameters to produce a .gif from them. By inputting the above parameters plus a date range it would spit out a .gif by running a command from ImageMagick like this:
-
-
 
 ```bash
 convert -delay 20 -loop 0 -resize 50% \
   ./goes18/m1/fd/fc/2023-07-05/*.jpg timelapse.gif
-
 ```
-
-
 
 ## Final Product
 
@@ -122,8 +108,6 @@ convert -delay 20 -loop 0 -resize 50% \
 ![Full-color image](../../../../../images/timelapse-fc-2023-07-11.gif)
 
 #### References
-
-
 
 [https://www.goes-r.gov/downloads/resources/documents/GOES-RSeriesDataBook.pdf]()
 

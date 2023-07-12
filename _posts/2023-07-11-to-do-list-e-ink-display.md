@@ -1,7 +1,7 @@
 ---
 title: "To-Do List e-Ink Display"
 date: 2023-07-11
-layout: default
+layout: post
 image: ./images/PXL_20230706_051223183.jpg
 categories: jekyll update
 excerpt_separator: <!--more-->

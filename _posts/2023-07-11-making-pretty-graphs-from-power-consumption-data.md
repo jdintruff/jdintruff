@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Making Pretty Graphs From Power Consumption Data"
 date:   2023-07-11 02:07:49 +0000
 image: ./images/Screenshot%202023-07-10%20194652.png
@@ -10,7 +10,6 @@ excerpt_separator: <!--more-->
 At some point I became interested in very accurately measuring the amount of power I'm consuming for all of my computer hardware. I'm regurgitating this from memory because I barely documented anything, but what follows is what I remember of this project.
 
 <!--more-->
-
 
 ## Hardware
 
@@ -29,8 +28,6 @@ Taking apart these devices is pretty simple although at the time I had trouble f
 ![Prying off the endcap](../../../../../images/PXL_20221206_003248035.jpg)
 
 1.) Carefully pry off the grey endcap with a flathead screwdriver. The plastic is pretty soft so be gentle.
-
- 
 
 ![Slidey boys](../../../../../images/PXL_20221206_003200376.jpg)
 

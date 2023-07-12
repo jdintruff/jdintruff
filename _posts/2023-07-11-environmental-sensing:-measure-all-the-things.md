@@ -1,7 +1,7 @@
 ---
 title: "Environmental Sensing: Measure ALL The Things"
 date: 2023-07-11
-layout: default
+layout: post
 excerpt_separator: <!--more-->
 image: ./images/PXL_20221119_222918207.jpg
 ---
@@ -41,8 +41,6 @@ A [SAMD21](https://ww1.microchip.com/downloads/en/devicedoc/40001884a.pdf) with 
 There were plans to make an outdoor version of these that are capable of being solar-powered, but that's morphed into a different future project using LoRa instead of WiFi.
 
 I put these together on a breadboard out of impatience and a lack of creativity. In the future I might put them together with some sort of enclosure but I doubt I'll ever get around to it.
-
-
 
 ### Software
 
