@@ -22,8 +22,7 @@ There's a great project called [teslausb](https://github.com/marcone/teslausb) w
 
 This is what it looks like in my messy glovebox, please ignore the insanely expired registration.
 
-![Stuffing a bluetooth device into my car's brains](../../../../../images/PXL_20230713_204411068.jpg)
-
+![Glovebox computer](../../../../../images/PXL_20230713_204643923%20(1).jpg)
 
 
 The telemetry side wasn't nearly as simple. At a high level, the Raspberry Pi connected to a bluetooth device that was plugged into my car's OBD-II port in order to gather, parse, and filter some of the unobfuscated telemetry that the car emits.
@@ -34,7 +33,7 @@ Unfortunately Tesla doesn't adhere to common standards for OBD-II ports so in or
 
 There was a great [YouTube video](https://www.youtube.com/watch?v=OKzPa2HdsvA) that showed me how to easily access the OBD-II port on my specific model of car which made things a lot less stressful (I was very anxious about disassembling my brand new car).
 
-![Brain surgery complete](../../../../../images/PXL_20230713_204643923%20(1).jpg)
+![Stuffing a bluetooth device into my car's brains](../../../../../images/PXL_20230713_204411068.jpg)
 
 
 
