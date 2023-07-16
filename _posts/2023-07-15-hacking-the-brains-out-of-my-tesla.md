@@ -1,5 +1,5 @@
 ---
-title: "Hacking The Brains Out Of My Telsa"
+title: "Hacking The Brains Out Of My Tesla"
 date: 2023-07-15
 layout: post
 image: ./images/PXL_20230713_204411068.jpg
