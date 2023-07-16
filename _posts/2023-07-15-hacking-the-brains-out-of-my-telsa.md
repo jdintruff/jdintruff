@@ -18,7 +18,9 @@ The car was a 2021 Tesla Model S Plaid that I bought a couple of years ago. It w
 
 The car has a USB port in the glovebox where users can plug in a flash drive to allow the car to store videos from its cameras. An example use case is if I honk my horn, it automatically saves the footage before and after that moment. 
 
-There's a great project called [teslausb](https://github.com/marcone/teslausb) which runs on a Raspberry Pi 4 Model B that's plugged into that USB port and emulates a storage device. When the car saves video data onto this emulated storage device, it's saved until the device is within range of my home WiFi network, at which point it copies that footage to my backup server. It even let me set up a Discord webhook so that whenever it finished uploading footage it would send me a message/notification. Very cool project, simple to setup and configure, major props to [marcone](https://github.com/marcone) for his work on this project.
+There's a great project called [teslausb](https://github.com/marcone/teslausb) which runs on a Raspberry Pi 4 Model B that's plugged into that USB port and emulates a storage device. When the car saves video data onto this emulated storage device, it's saved until the device is within range of my home WiFi network, at which point it copies that footage to my backup server. It even let me set up a Discord webhook so that whenever it finished uploading footage it would send me a message/notification. Very cool project, simple to setup and configure, major props to [marcone](https://github.com/marcone) for his works.
+
+This is what it looks like in the glovebox, please ignore the insanely expired registration.
 
 ![Stuffing a bluetooth device into my car's brains](../../../../../images/PXL_20230713_204411068.jpg)
 
