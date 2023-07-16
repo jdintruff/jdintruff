@@ -20,7 +20,7 @@ The car has a USB port in the glovebox where users can plug in a flash drive to 
 
 There's a great project called [teslausb](https://github.com/marcone/teslausb) which runs on a Raspberry Pi 4 Model B that's plugged into that USB port and emulates a storage device. When the car saves video data onto this emulated storage device, it's saved until the device is within range of my home WiFi network, at which point it copies that footage to my backup server. It even let me set up a Discord webhook so that whenever it finished uploading footage it would send me a message/notification. Very cool project, simple to setup and configure, major props to [marcone](https://github.com/marcone) for his works.
 
-This is what it looks like in the glovebox, please ignore the insanely expired registration.
+This is what it looks like in my messy glovebox, please ignore the insanely expired registration.
 
 ![Stuffing a bluetooth device into my car's brains](../../../../../images/PXL_20230713_204411068.jpg)
 
@@ -41,16 +41,16 @@ There was a great [YouTube video](https://www.youtube.com/watch?v=OKzPa2HdsvA) t
 Once the car's brains were exposed I plugged the cable into the OBD-II port and plugged my OBDLink MX+ into that cable. I had a hard time getting my Raspberry Pi to consistently pair with that Bluetooth device every time it powered on and ended up having to disassemble the front console of my car multiple more times just to push the pair button, which made me feel like an absolute homunculus. Eventually after updating the firmware on the OBDLink MX+ it would consistently connect by running this sequence of commands automatically on reboot:
 
 ```bash
-# Set up the CAN bus
-ip link set can0 type can bitrate 500000
-ip link set can0 up
-
 # Connect using the MAC address of my Bluetooth device
 rfcomm connect hci0 00:XX:XX:XX:XX:XX 1
 
 # Attach the line discipline
 ldattach --debug --speed 500000 --eightbits --noparity \
   --onestopbit --iflag -ICRNL,INLCR,-IXOFF 29 /dev/rfcomm0
+
+# Set up the CAN bus
+ip link set can0 type can bitrate 500000
+ip link set can0 up
 ```
 
 After that I was able to dump the CAN bus to stdout by just running
