@@ -32,7 +32,7 @@ Unfortunately Tesla doesn't adhere to common standards for OBD-II ports so in or
 
 There was a great [YouTube video](https://www.youtube.com/watch?v=OKzPa2HdsvA) that showed me how to easily access the OBD-II port on my specific model of car which made things a lot less stressful (I was very anxious about disassembling my brand new car).
 
-![Brain surgery complete](../../../../../images/PXL_20230713_204643923 (1).jpg)
+![Brain surgery complete](../../../../../images/PXL_20230713_204643923%20(1).jpg)
 
 
 
