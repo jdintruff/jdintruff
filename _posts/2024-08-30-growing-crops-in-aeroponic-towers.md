@@ -1,7 +1,7 @@
 ---
 title: "Growing Crops in Aeroponic Towers"
 date: 2024-08-30
-layout: default
+layout: post
 image: ./images/PXL_20240720_192801099.MP.jpg
 excerpt_separator: <!--more-->
 ---

@@ -43,6 +43,10 @@
           <hr>
         </div>
 
+	{% if page.image %}
+	  <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="post-header-image">
+        {% endif %}
+
         {{ content }}
 
       </section>
