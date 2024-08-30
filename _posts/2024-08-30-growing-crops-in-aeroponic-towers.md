@@ -2,11 +2,13 @@
 title: "Growing Crops in Aeroponic Towers"
 date: 2024-08-30
 layout: default
+image: ./images/PXL_20240720_192801099.MP.jpg
+excerpt_separator: <!--more-->
 ---
 
-# Growing Crops in Aeroponic Towers
+Growing your own food is awesome, but I think vertical farming is even more awesome, so I fired up my 3D printers and did a little hands-on engineering! I figured I would document how I did it in case anyone else wants to do something similar based on my work.
 
-![](../../../../../images/PXL_20240804_203629191.MP.jpg)
+<!--more-->
 
 #### NOTE: this guide is just what worked for me, your mileage may vary, and there are lots of ways to do this. I am a noob myself and take no responsibility if you flood your house following these instructions. Please proceed with cautious enthusiasm and have some fun!
 
@@ -288,6 +290,9 @@ Aphids were a menace and I wish I had been more consistent with the neem oil spr
 
 ### a. Solar Power
 
+![alt_text](../../../../../images/PXL_20240722_143044297.jpg "image_tooltip")
+![alt_text](../../../../../images/PXL_20240817_040059838.jpg "image_tooltip")
+
 Right now I'm working on a newly designed chimney part that will snap onto the top of the tower and has a solar panel. The solar panel will charge a series of batteries and power an ESP32 microcontroller which will turn the pump on and off on a schedule via Home Assistant.
 
 ### b. Sensors
@@ -317,7 +322,7 @@ I could create a highly concentrated nutrient mix and put it in a bottle with a 
 
 Similarly with pH, I could put pH up solution in one bottle and pH down solution in another bottle and then adjust the pH as needed based on the sensor measurement.
 
-# Appendix
+# Appendix A: .step files
 
 .step files from my favorite tower configuration follow, listed from bottom of the tower to the top with credits sprinkled in.
 
@@ -334,3 +339,17 @@ Similarly with pH, I could put pH up solution in one bottle and pH down solution
 6. [Showerhead 18mm outer diameter (credit: PappaOvland on Discord)](../../../../../help_me_step_file_im_stuck/shower-head-18mm-od.step)
 
 7. [Showerhead 14mm-17mm outer diameter (credit: Me)](../../../../../help_me_step_file_im_stuck/shower-head-17mm-to-14mm.step)
+
+
+# Appendix B: Bill of Materials
+
+NOTE: these are not affiliate links, they're just to give people an idea of what I used to make this tower work.
+
+* [Pump](https://www.amazon.com/dp/B07L54HB83)
+* [Reinforced vinyl tubing](https://www.amazon.com/gp/product/B07W974677)
+* [6x Five gallon bucket](https://www.amazon.com/gp/product/B0BGMGZP92)
+* [General purpose nutrient mix](https://www.amazon.com/gp/product/B08YCWHW4F)
+* [Mycorrhiza mix](https://www.amazon.com/gp/product/B07H5V7VZ2)
+* [Flowering/fruiting nutrients](https://www.amazon.com/gp/product/B01L32CDZI)
+* [Neem oil](https://www.amazon.com/gp/product/B09DL83WTZ)
+* [8-inch hole cutter](https://www.amazon.com/dp/B0C8JK9PKX)
